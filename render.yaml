@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: xpense-xpert-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_CONN
+        sync: false # This will be manually set in the Render dashboard
+      - key: JWT_SECRET
+        sync: false # This will be manually set in the Render dashboard
+      - key: FRONTEND_URL
+        value: https://xpense-xpert.onrender.com # Update this with your actual frontend URL when deployed
