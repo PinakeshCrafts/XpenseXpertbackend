@@ -14,4 +14,4 @@ services:
       - key: JWT_SECRET
         sync: false # This will be manually set in the Render dashboard
       - key: FRONTEND_URL
-        value: https://xpense-xpert.onrender.com # Update this with your actual frontend URL when deployed
+        value: https://xpense-xpert-2f5z.onrender.com # Update this with your actual frontend URL when deployed

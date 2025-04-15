@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 // Updated CORS configuration to support deployed environment
 const allowedOrigins = [
     'http://localhost:3000',               // Local development
-    'https://xpense-xpert.onrender.com',   // Replace with your actual frontend URL when deployed
+    'https://xpense-xpert-2f5z.onrender.com',   // Replace with your actual frontend URL when deployed
     process.env.FRONTEND_URL               // From environment variable if set
 ].filter(Boolean);
 
